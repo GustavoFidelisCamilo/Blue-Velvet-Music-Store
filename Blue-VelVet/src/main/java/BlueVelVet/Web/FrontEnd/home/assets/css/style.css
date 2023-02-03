@@ -1,0 +1,82 @@
+:root {
+    --dark-color: #151A1E;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-color) !important;
+    color: #FFF !important;
+}
+
+
+/* HEADER */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+#logo {
+    width: 70px;
+}
+header nav .button {
+    display: flex;
+    background-color: var(--dark-color);
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFF;
+    width: 80px;
+    height: 30px;
+    border-radius: 12px;
+    color: #FFF;
+}
+
+
+/* MAIN */
+main {
+    margin-top: 40px;
+}
+main .album {
+    display: flex;
+}
+main .album .album-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-color: #FFF;
+    border-radius: 8px;
+    color: var(--dark-color);
+}
+main .album .album-card:first-child {
+    margin-right: 24px;
+}
+main .album .album-card:last-child {
+    margin-left: 24px;
+}
+main img {
+    width: 100%;
+    border-radius: 8px;
+}
+main .album .album-card .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+main .album .album-card .buttons-card {
+    margin-bottom: 16px;
+}
+button.album-btn {
+    background-color: var(--dark-color);
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
